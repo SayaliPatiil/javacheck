@@ -13,8 +13,7 @@ class GfG
             {
                 System.out.println("exit...");
   
-                // Terminate JVM
-                System.exit(0);
+                
             }
             else
                 System.out.println("arr["+i+"] = " +
