@@ -1,7 +1,7 @@
 import java.util.*;
 import java.lang.*;
   
-class GfG
+class Main
 {
     public static void main(String[] args)
     {
