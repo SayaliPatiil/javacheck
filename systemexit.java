@@ -21,14 +21,24 @@ class Main
         }
          logger.info("End of Program");
     }
-  class PatientRecord {
+  /*class PatientRecord {
     private String name;
     private String socialSecurityNum;
     public Patient(String name,String ssn) 
     {
       this.SetName(name);
       this.SetSocialSecurityNumber(ssn);
-    }}
+    }}*/
+  public void printMessage(int month)
+  {
+    switch (month)
+    {
+
+      case 1: print("January");
+      case 2: print("February");
+    }
+    println(" is a great month");
+  }
 
 
 }
