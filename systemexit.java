@@ -28,6 +28,7 @@ class Main
     {
 
       case 1: print("January");
+        break;
       case 2: print("February");
         break;
     }
