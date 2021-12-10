@@ -11,14 +11,14 @@ class GfG
         {
             if (arr[i] >= 5)
             {
-                System.out.println("exit...");
+                 logger.info("exit...");
   
                 
             }
             else
-                System.out.println("arr["+i+"] = " +
+                logger.info("arr["+i+"] = " +
                                   arr[i]);
         }
-        System.out.println("End of Program");
+         logger.info("End of Program");
     }
 }
