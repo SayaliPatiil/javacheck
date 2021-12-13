@@ -1,47 +1,49 @@
-import java.util.*;
-import java.lang.*;
-  
-class Main
+package javacodechecker;
+
+public class SensitiveDataInSerializableClass implements Serializable
 {
-    public static void main(String[] args)
-    {
-        int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
-        private static final int MAX_NUMBER_OF_REQUESTS = 5;
-        for (int i = 0; i < arr.length; i++)
-        {
-            if (arr[i] >=  MAX_NUMBER_OF_REQUESTS)
-            {
-                 logger.info("exit...");
-  
-                
-            }
-            else
-                logger.info("arr["+i+"] = " +
-                                  arr[i]);
-        }
-         logger.info("End of Program");
-    }
- 
-  public void printMessage(int month)
-  {
-    switch (month)
-    {
+private String passwordHash;
 
-      case 1: print("January");
-        break;
-      case 2: print("February");
-        break;
-    }
-    println(" is a great month");
-  }
-  class PatientRecord {
-private String name;
-private String socialSecurityNum;
-public Patient(String name,String ssn) {
-this.SetName(name);
-this.SetSocialSecurityNumber(ssn);
-}
+
+
+protected void setPassword(String password)
+{
+passwordHash = password;
 }
 
 
+
+protected String getPassword()
+{
+return passwordHash;
+}
+
+
+
+protected void withdraw(float amount) throws SQLException
+{
+if (passwordHash != null)
+{
+Connection connection = DriverManager.getConnection("192.168.39.10", "sa", passwordHash);
+
+
+
+
+if (connection != null)
+{
+try
+{
+connection.close();
+}
+catch (SQLException exceptSql)
+{
+IO.logger.log(Level.WARNING, "Error closing Connection", exceptSql);
+}
+}
+}
+else
+{
+IO.logger.log(Level.WARNING, "Invalid password.");
+}
+}
 }
