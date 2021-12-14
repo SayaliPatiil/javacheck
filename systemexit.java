@@ -4,6 +4,6 @@ public void bad(HttpServletRequest request, HttpServletResponse response) throws
 IO.writeLine("line before redirect");
 IO.writeLine("line before redirect");
 response.sendRedirect("/test");
-  return;
+IO.writeLine("line before redirect");
 }
 }
