@@ -20,6 +20,6 @@ class systemexit
                 logger.info("arr["+i+"] = " +
                                   arr[i]);
         }
-        System.out.println("End of Program");
+     logger.info("End of Program");
     }
 }
