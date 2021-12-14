@@ -1,3 +1,4 @@
+public class test{
 public void notValid() throws Throwable
     {
        
@@ -12,3 +13,4 @@ public void notValid() throws Throwable
             IO.writeLine(IO.toHex(encrypted));
         
     }
+}
