@@ -12,13 +12,12 @@ class systemexit
         {
             if (arr[i] >=MAX_NEMBER_OF_REQUEST )
             {
-                System.out.println("exit...");
+                logger.info("exit...");
   
-                // Terminate JVM
-                System.exit(0);
+                
             }
             else
-                System.out.println("arr["+i+"] = " +
+                logger.info("arr["+i+"] = " +
                                   arr[i]);
         }
         System.out.println("End of Program");
