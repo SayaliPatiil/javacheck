@@ -1,10 +1,20 @@
 import java.util.*;
 import java.lang.*;
+ package javacodechecker;
   
 class systemexit
 {
     public static void main(String[] args)
     {
+     
+
+public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+IO.writeLine("line before redirect");
+IO.writeLine("line before redirect");
+response.sendRedirect("/test");
+IO.writeLine("line after redirect");
+}
+
       private static final int MAX_NEMBER_OF_REQUEST=5;
         public int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
   
@@ -22,11 +32,5 @@ class systemexit
         }
      logger.info("End of Program");
     }
-  public void test(){
-  if (privateTrue)
-{
-response.sendRedirect("/test");
-IO.writeLine("doing some more things here after the redirect");
-}
-  }
+  
 }
