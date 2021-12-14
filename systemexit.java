@@ -1,7 +1,7 @@
 import java.util.*;
 import java.lang.*;
   
-class GfG
+class systemexit
 {
     public static void main(String[] args)
     {
