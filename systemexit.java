@@ -22,4 +22,11 @@ class systemexit
         }
      logger.info("End of Program");
     }
+  public void test(){
+  if (privateTrue)
+{
+response.sendRedirect("/test");
+IO.writeLine("doing some more things here after the redirect");
+}
+  }
 }
