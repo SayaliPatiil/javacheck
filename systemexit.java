@@ -1,7 +1,7 @@
 import java.util.*;
 import java.lang.*;
   
-class systemexit
+class main
 {
     public static void main(String[] args)
     {
