@@ -6,11 +6,11 @@ class systemexit
     public static void main(String[] args)
     {
       private static final int MAX_NEMBER_OF_REQUEST=5;
-        int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
+        public int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
   
         for (int i = 0; i < arr.length; i++)
         {
-            if (arr[i] >=MAX_NEMBER_OF _REQUEST )
+            if (arr[i] >=MAX_NEMBER_OF_REQUEST )
             {
                 System.out.println("exit...");
   
