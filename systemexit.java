@@ -34,13 +34,8 @@ class systemexit
     }
     println(" is a great month");
   }
-  try {
-        int num1 = 5/0;
-      }
-      catch (Throwable e) {
-          e.printStackTrace();
-      }
-    }
+  
+    
 
 }
 
