@@ -40,6 +40,8 @@ class systemexit
         break;
       case 2: print("February");
         break;
+        case 3: print("March");
+        break;
     }
     println(" is a great month");
   }
