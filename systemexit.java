@@ -9,6 +9,10 @@ public class Systemexit
           e.printStackTrace();
       }
     }
+    public void compare() {
+if (str1 == str2) {
+logger.info("str1 == str2");
+}
 
     public static void main( String args[] ) {
       foo();
